@@ -145,7 +145,7 @@ def load_tsplib(filename):
 
 if __name__ == '__main__':
     coords, distance_matrix = load_tsplib('./xqf131.tsp')
-    length, route, it = ga(distance_matrix, population_size=64, cross_rate=0.9, mutation_rate = 0.1, max_iters=20000, thres=1000)
+    length, route, it = ga(distance_matrix, population_size=64, cross_rate=0.9, mutation_rate = 0.05, max_iters=20000, thres=1000)
     print("iteration:", it)
     print("length:", length)
     print("route:", list(route))
